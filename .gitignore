@@ -1,0 +1,7 @@
+build
+_deps
+.vscode
+CMakeFiles
+CMakeCache.txt
+cmake_install.cmake
+.DS_Store
