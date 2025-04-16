@@ -201,7 +201,7 @@ namespace Infisical
       bool getExpandSecretReferences() const { return _expandSecretReferences; }
     };
 
-    class ListSecretOptions
+    class ListSecretsOptions
     {
     private:
       std::string _projectId;
@@ -215,7 +215,7 @@ namespace Infisical
       friend class ListSecretOptionsBuilder;
 
     public:
-      ListSecretOptions() = default;
+      ListSecretsOptions() = default;
 
       const std::string &getProjectId() const { return _projectId; }
       const std::string &getEnvironment() const { return _environment; }
@@ -228,12 +228,12 @@ namespace Infisical
 
     class ListSecretOptionsBuilder
     {
-      ListSecretOptions _options;
+      ListSecretsOptions _options;
 
     public:
       ListSecretOptionsBuilder() = default;
 
-      ListSecretOptions build()
+      ListSecretsOptions build()
       {
         if (_options._projectId.empty() || _options._environment.empty())
         {
@@ -679,7 +679,7 @@ namespace Infisical
     public:
       explicit SecretsClient(http::HttpClient *httpClient);
 
-      std::vector<TSecret> listSecrets(Input::ListSecretOptions options);
+      std::vector<TSecret> listSecrets(Input::ListSecretsOptions options);
       TSecret getSecret(Input::GetSecretOptions options);
       TSecret updateSecret(Input::UpdateSecretOptions options);
       TSecret createSecret(Input::CreateSecretOptions options);

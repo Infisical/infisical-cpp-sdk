@@ -128,7 +128,7 @@ namespace Infisical
     {
     }
 
-    std::vector<TSecret> Secrets::SecretsClient::listSecrets(Infisical::Input::ListSecretOptions options)
+    std::vector<TSecret> Secrets::SecretsClient::listSecrets(Infisical::Input::ListSecretsOptions options)
     {
       auto params = std::map<std::string, std::string>{
           {"workspaceId", options.getProjectId()},
