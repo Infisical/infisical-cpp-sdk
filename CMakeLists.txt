@@ -57,6 +57,6 @@ install(DIRECTORY include/
     DESTINATION include
 )
 
-install(FILES lib/json.hpp
+install(FILES lib/nlohmann/json.hpp
     DESTINATION include/nlohmann
 )
