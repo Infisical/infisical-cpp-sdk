@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 #include <optional>
-#include <nlohmann/json.hpp>
+#include "../../lib/json.hpp"
 #include <cpr/cpr.h>
 
 // we are using std::optional which nlohmann doesn't support by default, so we're overwriting the default serializer to support it

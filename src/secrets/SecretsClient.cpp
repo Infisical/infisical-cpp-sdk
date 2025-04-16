@@ -1,6 +1,6 @@
 #include <libinfisical/InfisicalClient.h>
 #include <iostream>
-#include <nlohmann/json.hpp>
+#include "../../lib/json.hpp"
 #include <string>
 
 #include <cstdlib>

@@ -3,7 +3,7 @@
 #include <iostream>
 #include <stdio.h>
 #include <cpr/cpr.h>
-#include <nlohmann/json.hpp>
+#include "../../lib/json.hpp"
 
 std::string httpMethodStringRepresentation(Infisical::http::Method method)
 {
